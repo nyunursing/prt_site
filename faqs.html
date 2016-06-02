@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>
-        NYUCN ExamSoft FAQ's
+        NYURMCN Print Server FAQ's
     </title>
     <meta name="description" content="This page showcases a demo of what a typical implementation of smoothState.js might look like. It decorates page loads with a simple fade effect by using CSS animations.">
     <link href="css/all.css" rel="stylesheet" type="text/css" />
@@ -40,21 +40,69 @@
 	<a id="home"> </a>
 	<div class="segment_content">
 		
-		<a href="#question1"><h3>How do I install a printer on my desktop at the College of Nursing?</h3></a>
-		<a href="#question2"><h3>How do I install a printer on my Windows laptop?</h3></a>
-		<a href="#question3"><h3>How do I install a printer on my Mac computer?</h3></a>
+		<a href="#question1"><h3>How do I install a printer on a Windows computer?</h3></a>
+		<a href="#question2"><h3>How do I install a printer on a Mac computer?</h3></a>
 		
 
-		<a id="question1"></a><h2>How do I install a printer on my desktop at the College of Nursing?</h2>
-		<p></p>
+		<a id="question1"></a><h2>How do I install a printer on a Windows computer?</h2>
+		<p>
+			
+			<li>Open Internet Explorer
+				<ul>Open "Compatibility View Settings" from the settings menu. </ul>
+				<ul><img style="width: 100%" src="img/Windows/image001.png"></ul>
+				<ul>Under “Add this website:” enter nyu.edu and click “Add”.</ul>
+				<ul><img style="width: 100%" src="img/Windows/image002.png"></ul>
+				<ul>Open "Internet Options" from the settings menu.</ul>
+				<ul><img style="width: 100%" src="img/Windows/image003.png"></ul>
+				<uL>Open the Security tab and unselect Enable Protected Mode. Close Internet Explorer.</ul>
+				<ul><img style="width: 100%" src="img/Windows/image004.png"></ul>
+			</li>
+			<li>In Internet Explorer navigate to https://prt.nursing.nyu.edu
+				<ul>A popup box will prompt you for authentication. Make sure “Domain” says “AD”. If it does not enter “AD\” before putting in your username.  Proceed to log in with your NYU Credentials.</ul>
+				<ul><img style="width: 100%" src="img/Windows/image005.png"></ul>
+			</li>
+			<li>Select the printer you would like to connect too.
+				<ul><img style="width: 100%" src="img/Windows/image006.png"></ul>
+				<ul>Click on the Connect option to the left.  Click on yes to proceed and add the printer.</ul>
+				<ul><img style="width: 100%" src="img/Windows/image007.png"></ul>
+				<ul>You will see a confirmation page after the installation is complete.</ul>
+				<ul><img style="width: 100%" src="img/Windows/image008.png"></ul>
+			</li>
+		
+		</p>
 		<a href="#home">Back to Top</a>
 
-		<a id="question2"></a><h2>How do I install a printer on my Windows Laptop?</h2>
-		<p></p>
-		<a href="#home">Back to Top</a>
-
-		<a id="question3"></a><h2>How do I install a printer on my Mac computer?</h2>
-		<p></p>
+		<a id="question2"></a><h2>How do I install a printer on a Mac computer</h2>
+		<p>
+		<li>Open System Preferences 
+		<ul><img style="width: 100%" src="img/Mac/image001.jpg"></ul>
+		<ul>Click on "Print & Scan"</ul>
+		<ul><img style="width: 100%" src="img/Mac/image002.jpg"></ul>
+		<ul>Click on "+" underneath the list of printers and select "Add Printer or Scanner..." in the menu that appears.</ul>
+		<ul><img style="width: 100%" src="img/Mac/image003.jpg"></ul>
+		<ul>An "Add" window will appear. If there is not already an "Advanced" button in its toolbar (on top, alongside "Default", "Fax", "IP", etc.), you'll need to customize the toolbar. Control + click on the toolbar area and select "Customize Toolbar...".</ul>
+		<ul><img style="width: 100%" src="img/Mac/image004.jpg"></ul>
+		<ul>Drag the "Advanced" item up onto the toolbar and click "Done". </ul>
+		<ul><img style="width: 100%" src="img/Mac/image005.jpg"></ul>
+		<ul>Click on the "Advanced" button.</ul>
+		<ul><img style="width: 100%" src="img/Mac/image006.jpg"></ul>
+		<ul>Enter/select the following:
+		<ul>
+			<li>Type: “Windows printer via spoolss"</li>
+			<li>Device: "Another Device"</li>
+			<li>URL: smb://con914.dn.ed.nyu.edu/<PrinterName></li>
+			<li>Name: Enter a descriptive name to remember what the printer is.</li>
+			<li>Location: Enter the location for your reference.</li>
+			<li>Use: Generic PostScript Printer.</li>
+		</ul>
+		</ul>
+		<ul><img style="width: 100%" src="img/Mac/image007.jpg"></ul>
+		<ul>The first time, you will be prompted for your credentials. These are your NYU Home username and password.</ul>
+		<ul><img style="width: 100%" src="img/Mac/image008.jpg"></ul>
+		<ul>Use the following format for Username: AD\netid and check the box next to “Remember this password in my keychain”</ul>
+		</li>
+		
+		</p>
 		<a href="#home">Back to Top</a>
 
 	</div>
@@ -62,7 +110,7 @@
 
 			<div class="m-footer m-segment">
 				<div class="segment_content">
-					<a target="blank" href="http://nursing.nyu.edu" >NYUCN</a>
+					<a target="blank" href="http://nursing.nyu.edu" >NYURMCN</a>
 				</div>
 			</div>
 		</div>
