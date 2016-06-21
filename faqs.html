@@ -12,9 +12,16 @@
         NYURMCN Print Server FAQ's
     </title>
     <style>
+	table {
+		border-collapse: collapse;
+	}
 	th, td {
 		text-align: left;
-		border-bottom: 1px solid #ddd;
+		border-bottom: 1px solid;
+		
+	}
+	tr:nth-child(even) {
+		background-color: #cfd8dc
 	}
 	</style>
 	<meta name="description" content="This page showcases a demo of what a typical implementation of smoothState.js might look like. It decorates page loads with a simple fade effect by using CSS animations.">
@@ -46,7 +53,8 @@
 		
 		<a href="#question1"><h3>How do I install a printer on a Windows computer?</h3></a>
 		<a href="#question2"><h3>How do I install a printer on a Mac computer?</h3></a>
-		
+		<a href="#question3"><h3>Who has access to the print server?</h3></a>
+		<a href="#question4"><h3>What type of device can I use with the print server?</h3></a>
 
 		<a id="question1"></a><h2>How do I install a printer on a Windows computer?</h2>
 		<p>
@@ -76,7 +84,7 @@
 		</p>
 		<a href="#home">Back to Top</a>
 
-		<a id="question2"></a><h2>How do I install a printer on a Mac computer</h2>
+		<a id="question2"></a><h2>How do I install a printer on a Mac computer?</h2>
 		<p>
 		<li>Open System Preferences 
 		<ul><img style="width: 60%" src="img/Mac/image001.jpg"></ul>
@@ -94,7 +102,7 @@
 		<ul>
 			<li>Type: “Windows printer via spoolss"</li>
 			<li>Device: "Another Device"</li>
-			<li>URL: smb://con914.dn.ed.nyu.edu/<PrinterName></li>
+			<li>URL: smb://con914.dn.ed.nyu.edu/&#60;PrinterName&#62;</li>
 				<ul>
 				<table style="width:100%;border: 1px solid black;border-bottom: 1px solid">
 				<tr>
@@ -125,7 +133,7 @@
 				</ul>
 			<li>Name: Enter a descriptive name to remember what the printer is.</li>
 			<li>Location: Enter the location for your reference.</li>
-			<li>Use: Generic PostScript Printer. (For printers)</li>
+			<li>Use: Generic PostScript Printer. (For those starting with PRT)</li>
 				<ul>
 				<li>For Lanier copiers follow instructions below</li>
 				</ul>
@@ -142,7 +150,7 @@
 		<ul>
 			<li>Type: “Windows printer via spoolss"</li>
 			<li>Device: "Another Device"</li>
-			<li>URL: smb://con914.dn.ed.nyu.edu/<PrinterName></li>
+			<li>URL: smb://con914.dn.ed.nyu.edu/&#60;PrinterName&#62;</li>
 			<li>Name: Enter a descriptive name to remember what the printer is.</li>
 			<li>Location: Enter the location for your reference.</li>
 			<li>Use: Click on “Select Software”, then type in Lanier to filter out the corresponding driver. The chart below lists the model name for each printer.</li>
@@ -181,6 +189,11 @@
 				<td>smb://con914.dn.ed.nyu.edu/Lanier009_LL1_LL1-40_B&W </td>
 				<td>Lanier MP C3503 PS</td>
 				</tr>
+				<tr>
+				<td>250 Park Ave</td>
+				<td>smb://con914.dn.ed.nyu.edu/Lanier008_250_Park_6thFloor_B&W </td>
+				<td>LANIER MP 4002 PCL 6</td>
+				</tr>
 				</table>
 			</ul>
 		<ul>After adding a Lanier printer you will need to store your copy code. When printing from an application open the System Print Dialogue or select Job Log from the Options menu.</ul>
@@ -196,6 +209,18 @@
 		<ul>You will need to use the Copy Code preset whenever printing to a lanier.</ul>
 		</li>
 		
+		</p>
+		<a href="#home">Back to Top</a>
+
+		<a id="question3"></a><h2>Who has access to the print server?</h2>
+		<p>
+		Use of the print server is restricted to Rory Meyers College of Nursing faculty and staff. The print server allows printing to some but not all public printers located within Meyers facilities. If you are experiencing access issues, please email nursing.it@nyu.edu.	
+		</p>
+		<a href="#home">Back to Top</a>
+
+		<a id="question4"></a><h2>What type of device can I use with the print server?</h2>
+		<p>
+		The print server currently supports currently updated versions of Windows and OS X versions 10.7 – current. Support is not available for Linux, Chromebooks, or mobile devices.	
 		</p>
 		<a href="#home">Back to Top</a>
 
